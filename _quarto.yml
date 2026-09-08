@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Statistical Report"
+  navbar:
+    background: dark
+    left:
+      - text: "|"
+      - href: https://www.translationalhistology.com/
+        text: Laboratory of Preclinical Studies
+      - text: "|"
+      - href: https://www.translationalhistology.com/
+        text: Group of Translational Therapeutics and Quantitative Histology
+
+format:
+  html:
+    theme: darkly
+    highlight-style: github
+    css: styles.css
+    toc: true

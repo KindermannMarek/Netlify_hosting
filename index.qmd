@@ -1,0 +1,79 @@
+---
+title: "try netlify hosting"
+subtitle: "try"
+author: "try"
+format:
+  html:
+    embed-resources: true
+    toc: true
+    toc-expand: 2
+    toc-depth: 4
+    toc-location: left
+    number-sections: true
+    number-depth: 4
+    code-fold: show
+    code-tools: true
+    code-summary: "Open code"
+    grid:
+      body-width: 1000px
+      sidebar-width: 600px
+      margin-width: 100px
+    highlight-style: github  # ✅ required for code coloring
+    theme: darkly                   # ✅ valid theme (Quarto auto-appplies)
+    css: styles.css 
+    references: true  
+    bibliography: references.bib
+    crossref:
+      fig-title: "Figure"
+      tbl-title: "Table" 
+      eq-title: "Equation"
+      lst-title: "Listing"
+      thm-title: "Theorem"
+      lem-title: "Lemma"
+      cor-title: "Corollary"
+      prp-title: "Proposition"
+      def-title: "Definition"
+      exm-title: "Example"
+project:
+  type: website
+  output-dir: output
+---
+
+------------------------------------------------------------------------
+
+
+```{r}
+#| label: libraries_load
+#| warning: false
+#| message: false
+#| include: false
+#| echo: true
+#| eval: true
+#| cache: false
+
+library(tidyverse)       # Collection of core R packages for data science (includes dplyr and tidyr)
+library(readxl)          # Reading data directly from Excel files (.xlsx)
+library(ggplot2)         # Data visualization/plotting
+library(ggsci)           # Scientific journal color palettes for ggplot2
+library(bayesplot)       # Visualizations for MCMC and Bayesian model checking
+library(tidybayes)       # Tools for manipulating and summarizing Bayesian posterior samples
+library(loo)             # Leave-One-Out cross-validation and model comparison 
+library(knitr)           # Dynamic document generation (e.g., R Markdown tables)
+library(patchwork)       # Combining multiple ggplot2 plots into a single layout
+library(brms)            # Bayesian multilevel modeling using Stan
+library(ggdag)           # For DAG
+library(dagitty)         # For DAG
+library(marginaleffects) # Extract and plot brms results
+library(patchwork)       # Compose the final plot grid
+library(egg)             # Compose the final plot grid
+```
+
+# Introduction
+
+12345 + 12345
+
+# For reproducibility
+```{r}
+sessionInfo()
+```
+
