@@ -72,6 +72,39 @@ library(egg)             # Compose the final plot grid
 
 12345 + 12345
 
+## 1. Interactive Plot Test
+
+```{r}
+#| message: false
+#| warning: false
+library(ggplot2)
+library(plotly)
+
+# Create a sample interactive ggplot
+p <- ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
+  geom_point(size = 3) +
+  theme_minimal() +
+  labs(title = "Fuel Economy vs. Weight", x = "Weight (1000 lbs)", y = "MPG")
+
+ggplotly(p)
+```
+
+
+```{r}
+#| message: false
+#| warning: false
+library(ggplot2)
+library(plotly)
+
+# Create a sample interactive ggplot
+p <- ggplot(mtcars, aes(x = wt, y = mpg, color = factor(cyl))) +
+  geom_point(size = 3) +
+  theme_minimal() +
+  labs(title = "Fuel Economy vs. Weight", x = "Weight (1000 lbs)", y = "MPG")
+
+ggplotly(p)
+```
+
 # For reproducibility
 ```{r}
 sessionInfo()
